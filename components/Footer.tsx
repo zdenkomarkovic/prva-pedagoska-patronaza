@@ -76,15 +76,17 @@ export default function Footer() {
           </div>
           <div className="md:col-span-1 col-span-2 text-center text-primary">
             <h3 className="text-lg font-semibold mb-2 md:mb-4">
-              starter naslov
+              Prva pedagoška patronaža
             </h3>
 
-            <p className=" font-bold ">starter poruka</p>
+            <p className=" font-bold ">
+              Centar u službi roditelja, dece i porodice
+            </p>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center text-center gap-2 md:gap-10 border-t-[1px] border-cool-green mt-10 pt-5">
-          <p>&copy; 2025 _________. Sva prava zadržana.</p>
+        <div className="flex flex-col md:flex-row justify-center text-center gap-2 md:gap-10 border-t-[1px] border-primary mt-10 pt-5">
+          <p>&copy; 2025 Prva pedagoška patronaža. Sva prava zadržana.</p>
           <a href="https://www.manikamwebsolutions.com/" target="_blank">
             izrada sajta:{" "}
             <span className="font-bold text-primary"> ManikamWebSolutions</span>

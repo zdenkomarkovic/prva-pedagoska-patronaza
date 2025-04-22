@@ -6,10 +6,16 @@ import Cards1 from "@/components/Cards1";
 import Cards2 from "@/components/Cards2";
 import Cards2Kosina from "@/components/Cards2Kosina";
 import CardWithImage from "@/components/CardWithImage";
+import Cilj from "@/components/Cilj";
+import Delovanje from "@/components/Delovanje";
 import HeroOneImg from "@/components/HeroOneImg";
+import Namera from "@/components/Namera";
 import PozoviteNasOdmah from "@/components/PozoviteNasOdmah";
 import PozoviteNasOdmahImage from "@/components/PozoviteNasOdmahImage";
+import Prednosti from "@/components/Prednosti";
 import Testemonials from "@/components/Testimonials";
+import Usluge from "@/components/Usluge";
+import VideoCard from "@/components/VideoCard";
 import { cards1Data, cards2Data, cards2DataText } from "@/constants/index";
 
 export default function Home() {
@@ -17,7 +23,13 @@ export default function Home() {
     <div className="">
       <HeroOneImg />
       <About />
-      <About2 />
+      <Usluge />
+      <Prednosti />
+      {/* <Namera /> */}
+      {/* <Cilj /> */}
+      {/* <VideoCard /> */}
+      {/* <Delovanje /> */}
+      {/* <About2 />
       <PozoviteNasOdmah />
       <CardWithImage />
       <PozoviteNasOdmahImage />
@@ -34,7 +46,7 @@ export default function Home() {
       />
       <Cardlist />
       <BackgroundImage />
-      <Testemonials />
+      <Testemonials /> */}
     </div>
   );
 }
