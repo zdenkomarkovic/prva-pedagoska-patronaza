@@ -53,14 +53,13 @@ const VideoCard = () => {
       {/* <div className=" aspect-w-16 aspect-h-9 mx-auto"> */}
       <iframe
         id="youtube-video"
-        width="560"
-        height="315"
+        width="1120"
+        height="630"
         src="https://www.youtube.com/embed/mcWRNzKsY2Y?enablejsapi=1&start=720" // Početak od 12 minuta (720 sekundi)
         title="YouTube video"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        className="mx-auto aspect-w-16 aspect-h-9 w-full md:w-[1120px] md:h-[630px]"
       ></iframe>
       {/* </div> */}
     </div>
