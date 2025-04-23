@@ -1,5 +1,4 @@
 import About from "@/components/About";
-import Delovanje from "@/components/Delovanje";
 import HeroOneImg from "@/components/HeroOneImg";
 import NasTim from "@/components/NasTim";
 import Prednosti from "@/components/Prednosti";
