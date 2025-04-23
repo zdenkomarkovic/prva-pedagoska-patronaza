@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import HeroOneImg from "@/components/HeroOneImg";
 import NasTim from "@/components/NasTim";
+import PozoviteNasOdmah from "@/components/PozoviteNasOdmah";
 import Prednosti from "@/components/Prednosti";
 import Statistika from "@/components/Statistika";
 import Usluge from "@/components/Usluge";
@@ -13,6 +14,7 @@ export default function Home() {
       <Usluge />
       <Prednosti />
       <Statistika />
+      <PozoviteNasOdmah />
       <NasTim />
       {/* <Namera /> */}
       {/* <Cilj /> */}
