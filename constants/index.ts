@@ -40,7 +40,7 @@ export const navList = [
   },
   {
     title: "Usluge",
-    link: "/usluge",
+    link: "/centar/#usluge",
   },
   {
     title: "Kontakt",
