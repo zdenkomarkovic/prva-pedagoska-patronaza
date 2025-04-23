@@ -1,6 +1,9 @@
 import About from "@/components/About";
+import Delovanje from "@/components/Delovanje";
 import HeroOneImg from "@/components/HeroOneImg";
+import NasTim from "@/components/NasTim";
 import Prednosti from "@/components/Prednosti";
+import Statistika from "@/components/Statistika";
 import Usluge from "@/components/Usluge";
 import VideoCard from "@/components/VideoCard";
 export default function Home() {
@@ -10,6 +13,8 @@ export default function Home() {
       <About />
       <Usluge />
       <Prednosti />
+      <Statistika />
+      <NasTim />
       {/* <Namera /> */}
       {/* <Cilj /> */}
       <VideoCard />

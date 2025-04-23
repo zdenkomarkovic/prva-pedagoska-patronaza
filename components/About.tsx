@@ -37,7 +37,7 @@ const About = () => {
         bolji i slavićemo napredak vašeg deteta zajedno. Osnovan je sa ciljem da
         olakša roditeljima i deci školske obaveze na kućnoj adresi:
       </p>{" "}
-      <div className="flex flex-col gap-5 md:flex-row items-center justify-around">
+      <div className="flex flex-col gap-5 md:flex-row items-center justify-around border border-primary bg-white p-4 md:p-10 rounded-lg">
         <ul className="text-primary">
           <li className=" first-letter:pl-6"> - predčitalački momenti</li>
           <li className=" first-letter:pl-6"> - geogebra</li>
@@ -105,15 +105,15 @@ const About = () => {
           alt="pedagog"
           className="w-[170px] md:w-[300px]"
         />
-        <div className="flex flex-col gap-3 text-center">
-          <div className="mx-auto border border-primary shadow-lg py-5 px-5 md:px-20 w-full">
+        <div className="flex flex-col gap-3 text-center  text-primary">
+          <div className="mx-auto border bg-white border-primary shadow-lg py-5 px-5 md:px-20 w-full rounded-lg">
             <p>Program i edukacija u samom centru</p>
           </div>
-          <div className="mx-auto border border-primary shadow-lg p-5 w-full">
+          <div className="mx-auto border bg-white border-primary shadow-lg p-5 w-full rounded-lg">
             {" "}
             <p>Onlajn program i edukacija</p>
           </div>
-          <div className="mx-auto border border-primary shadow-lg p-5 w-full">
+          <div className="mx-auto border bg-white border-primary shadow-lg p-5 w-full rounded-lg">
             {" "}
             <p>Dolazak naših stručnjaka na adresu</p>
           </div>

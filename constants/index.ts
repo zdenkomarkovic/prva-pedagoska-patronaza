@@ -272,3 +272,37 @@ export interface Cards2DataText {
 export const cards2DataText: Cards2DataText = {
   text: "Pružamo usluge izrade, montaže i održavanja elektro ormana za domaćinstva, poslovne prostore i industrijska postrojenja. Naš tim vodi računa o kvalitetu instalacija i bezbednosti sistema, uz poštovanje svih standarda i propisa.",
 };
+
+export interface Tim {
+  name: string;
+  title: string;
+  image: string;
+}
+
+export const tim: Tim[] = [
+  {
+    name: "Jelena Matic",
+    title: "Master Vaspitač",
+    image: "/jelena.jpg",
+  },
+  {
+    name: "Marina Mitrovic",
+    title: "Diplomirani inženjer zaštite na radu",
+    image: "/slep puric.jpg",
+  },
+  {
+    name: "Marina Mitrovic",
+    title: "Diplomirani inženjer zaštite na radu",
+    image: "/slep puric.jpg",
+  },
+  {
+    name: "Marina Mitrovic",
+    title: "Diplomirani inženjer zaštite na radu",
+    image: "/slep puric.jpg",
+  },
+  {
+    name: "Marina Mitrovic",
+    title: "Diplomirani inženjer zaštite na radu",
+    image: "/slep puric.jpg",
+  },
+];
