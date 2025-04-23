@@ -68,7 +68,7 @@ const Card = ({ data }: { data: PageData }) => {
       }}
       whileTap={{ scale: 0.95 }}
       id={"usluge"}
-      className="h-full flex flex-col shadow-2xl shadow-muted-foreground"
+      className="h-full flex flex-col shadow-2xl shadow-muted-foreground rounded-lg overflow-hidden"
     >
       <Image
         src={data.image}
