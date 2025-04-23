@@ -13,30 +13,34 @@ export const navList = [
     title: "Početna",
     link: "/",
   },
+  // {
+  //   title: "Usluge",
+  //   list: [
+  //     {
+  //       title: "Kuhinje",
+  //       link: "",
+  //     },
+  //     {
+  //       title: "Plakari",
+  //       link: "",
+  //     },
+  //     {
+  //       title: "TV Komode",
+  //       link: "",
+  //     },
+  //     {
+  //       title: "Projektovanje Enterijera",
+  //       link: "",
+  //     },
+  //   ],
+  // },
   {
-    title: "Usluge",
-    list: [
-      {
-        title: "Kuhinje",
-        link: "",
-      },
-      {
-        title: "Plakari",
-        link: "",
-      },
-      {
-        title: "TV Komode",
-        link: "",
-      },
-      {
-        title: "Projektovanje Enterijera",
-        link: "",
-      },
-    ],
+    title: "Centar za drugo obrazovanje",
+    link: "/centar",
   },
   {
-    title: "Proizvodi",
-    link: "/proizvodi",
+    title: "Usluge",
+    link: "/usluge",
   },
   {
     title: "Kontakt",
@@ -304,5 +308,85 @@ export const tim: Tim[] = [
     name: "Marina Mitrovic",
     title: "Diplomirani inženjer zaštite na radu",
     image: "/slep puric.jpg",
+  },
+];
+
+export interface PageData {
+  id: number;
+  image: string;
+  title: string;
+  description: string[];
+  text: string;
+  text2: string;
+}
+
+export const pageData: PageData[] = [
+  {
+    id: 1,
+    image: "/savetovanje.jpg",
+    title: "Savetovanje za roditelje",
+    description: [
+      "- Prvi koraci nakon sumnje ili dijagnoze",
+      "- Kako da podržite svoje dete kod kuće",
+      "- Kako da se nosite sa stresom i izazovima roditeljstva",
+      "- Prava deteta i podrška u sistemu obrazovanja",
+    ],
+    text: "Lice za bezbednost i zdravlje na radu – savetnik/saradnik zastupa poslodavca pred inspekcijskim organima – inspekcija rada",
+    text2:
+      "Institut LIRA DOO pruža kompletnu podršku poslodavcima u ispunjavanju svih zakonskih obaveza iz oblasti bezbednosti i zdravlja na radu. Naš tim inženjera i savetnika osigurava da vaše poslovanje bude bezbedno, usklađeno sa propisima i efikasno organizovano. U okviru ove oblasti, izrađujemo i sprovodimo sledeće:",
+  },
+  {
+    id: 2,
+    image: "/ranaprocena.jpg",
+    title: "Rana procena i dijagnostika",
+    description: [
+      "- Posmatranje deteta u igri i svakodnevnim situacijama",
+      "- Prepoznavanje razvojnih odstupanja i rizika",
+      "- Preporuke za dalje korake i saradnju sa stručnjacima",
+    ],
+    text: "Naš tim stručnjaka pruža podršku u identifikaciji obaveza, prikupljanju podataka, izradi dokumentacije i komunikaciji sa nadležnim institucijama. Zaštitimo životnu sredinu zajedno – stručno, odgovorno i savesno.",
+    text2:
+      "Institut LIRA DOO pruža stručne usluge u oblasti zaštite životne sredine u skladu sa važećim zakonima i propisima Republike Srbije. Naš cilj je da pomognemo pravnim licima da posluju odgovorno, održivo i u potpunoj zakonskoj usklađenosti. U okviru usluga zaštite životne sredine nudimo:",
+  },
+  {
+    id: 3,
+    image: "/individualniigrupni.jpg",
+    title: "Individualni i grupni tretmani",
+    description: [
+      "- Razvoj pažnje, govora, motorike, socijalnih veština",
+      "- Integracija primarnih refleksa",
+      "- Brain Gym vežbe i senzorno-motorna stimulacija",
+      "- Priprema za školu / dodatna podrška u učenju",
+    ],
+    text: "Naš stručni tim osigurava da svi dokumenti budu izrađeni pravovremeno, precizno i u skladu sa važećim propisima, uz punu podršku tokom inspekcijskih nadzora. Bezbednost je na prvom mestu – poverite nam svoju zaštitu od požara.",
+    text2:
+      "Institut LIRA DOO pruža sveobuhvatne usluge iz oblasti zaštite od požara, usklađene sa zakonodavstvom i pravilnicima Republike Srbije. Naš cilj je da poslodavcima omogućimo bezbedno radno okruženje i efikasnu prevenciju rizika od požara. U okviru ove oblasti obavljamo:",
+  },
+
+  {
+    id: 4,
+    image: "/igraipokret.jpeg",
+    title: "Tretmani kroz igru i pokret",
+    description: [
+      "- Razvoj kroz muzičke igre, ritam i kretanje",
+      "- Grupne radionice za decu sa sličnim potrebama",
+      "- Jačanje samopouzdanja, saradnje i pozitivne slike o sebi",
+    ],
+    text: "Planovi se izrađuju u skladu sa vrstom delatnosti klijenta, specifičnostima lokacije i zakonskim zahtevima, a sadrže procenu rizika, plan mera, način evakuacije i koordinaciju sa nadležnim službama. Budite spremni – pravilno planiranje spašava živote i imovinu.",
+    text2:
+      "U skladu sa zakonskim obavezama i standardima, Institut LIRA DOO pruža usluge planiranja i organizovanja sistema zaštite i spasavanja u slučaju vanrednih situacija. Pravna lica su u obavezi da preduzmu sve mere za zaštitu života, zdravlja ljudi, imovine i životne sredine u vanrednim okolnostima. Naše usluge obuhvataju:",
+  },
+  {
+    id: 5,
+    image: "/edukacije.jpg",
+    title: "Edukacije i radionice za roditelje i stručnjake",
+    description: [
+      "- Praktične tehnike za svakodnevni rad sa decom",
+      "- Kako čitati i primeniti IOP (Individualni obrazovni plan)",
+      "- Razumevanje senzorne integracije, ponašanja i emocionalnog razvoja",
+    ],
+    text: "Naš tim obezbeđuje usklađenost sa važećim zakonodavstvom, zaštitu interesa poslodavca i jasnoću u komunikaciji sa zaposlenima. Uredna dokumentacija – temelj svakog uspešnog kolektiva.",
+    text2:
+      "Institut LIRA DOO nudi podršku u pripremi kompletne dokumentacije iz oblasti radnih odnosa, u skladu sa Zakonom o radu i drugim relevantnim propisima. Kvalitetna i pravovremena dokumentacija ključna je za zakonito poslovanje i stabilne odnose sa zaposlenima. Usluge obuhvataju:",
   },
 ];
