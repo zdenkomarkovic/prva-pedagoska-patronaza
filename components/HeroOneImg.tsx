@@ -9,13 +9,13 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className=" h-[100dvh]">
-      <div className="relative flex h-[80dvh]">
+      <div className="relative flex h-[77dvh]">
         <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-[1]" />
         <Image
           src={Hero3}
           alt="slep puric"
           fill
-          className="w-full h-[80dvh] md:h-[100dvh] object-cover"
+          className="w-full h-[77dvh] md:h-[100dvh] object-cover"
         />
 
         <div className="relative container px-2 md:px-4 mx-auto  flex flex-col gap-6 items-center pt-20 md:pt-10 justify-center z-[1] ">
@@ -48,7 +48,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="h-[20dvh] flex items-center">
+      <div className="h-[23dvh] flex items-center">
         <h2 className="container px-2 md:px-4 mx-auto">
           Prva pedagoška patronaža je centar koji je u službi roditelja, dece i
           porodice i jedina je i prva kod nas i u regionu ovog tipa.
