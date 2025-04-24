@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-[1]" />
         <Image
           src={Hero3}
-          alt="slep puric"
+          alt="pedagog"
           fill
           className="w-full h-[77dvh] md:h-[100dvh] object-cover"
         />
