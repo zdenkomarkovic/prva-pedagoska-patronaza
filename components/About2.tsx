@@ -6,11 +6,7 @@ import { motion } from "framer-motion";
 const About2 = () => {
   return (
     <div>
-      <div className="container px-2 md:px-4 py-10 md:py-20 mx-auto  space-y-7">
-        <h2 className="">
-          Prva pedagoška patronaža je centar koji je u službi roditelja, dece i
-          porodice i jedina je i prva kod nas i u regionu ovog tipa.
-        </h2>
+      <div className="container px-2 md:px-4  mx-auto  space-y-7">
         <p className=" first-letter:pl-6">
           Naše polje delovanja je -{" "}
           <span className="font-bold text-primary">
