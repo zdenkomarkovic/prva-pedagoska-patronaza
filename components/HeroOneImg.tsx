@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="relative flex min-h-[100dvh]">
+    <div className="relative flex h-[75dvh] md:h-[100dvh]">
       <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-[1]" />
       <Image
         src={Hero3}
