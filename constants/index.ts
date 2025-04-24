@@ -13,34 +13,30 @@ export const navList = [
     title: "Početna",
     link: "/",
   },
-  // {
-  //   title: "Usluge",
-  //   list: [
-  //     {
-  //       title: "Kuhinje",
-  //       link: "",
-  //     },
-  //     {
-  //       title: "Plakari",
-  //       link: "",
-  //     },
-  //     {
-  //       title: "TV Komode",
-  //       link: "",
-  //     },
-  //     {
-  //       title: "Projektovanje Enterijera",
-  //       link: "",
-  //     },
-  //   ],
-  // },
-  {
-    title: "Centar za drugo obrazovanje",
-    link: "/centar",
-  },
   {
     title: "Usluge",
-    link: "/centar/#usluge",
+    list: [
+      {
+        title: "Savetovanje za roditelje",
+        link: "/usluge/1",
+      },
+      {
+        title: "Rana procena i dijagnostika",
+        link: "/usluge/2",
+      },
+      {
+        title: "Individualni i grupni tretmani",
+        link: "/usluge/3",
+      },
+      {
+        title: "Tretmani kroz igru i pokret",
+        link: "/usluge/4",
+      },
+      {
+        title: "Edukacije i radionice za roditelje i stručnjake",
+        link: "/usluge/5",
+      },
+    ],
   },
   {
     title: "Kontakt",
@@ -310,12 +306,16 @@ export const tim: Tim[] = [
     image: "/slep puric.jpg",
   },
 ];
+export interface DescriptionItem {
+  title: string;
+  text: string;
+}
 
 export interface PageData {
   id: number;
   image: string;
   title: string;
-  description: string[];
+  description: DescriptionItem[];
   text: string;
   text2: string;
 }
@@ -326,41 +326,74 @@ export const pageData: PageData[] = [
     image: "/savetovanje.jpg",
     title: "Savetovanje za roditelje",
     description: [
-      "- Prvi koraci nakon sumnje ili dijagnoze",
-      "- Kako da podržite svoje dete kod kuće",
-      "- Kako da se nosite sa stresom i izazovima roditeljstva",
-      "- Prava deteta i podrška u sistemu obrazovanja",
+      {
+        title: "Prvi koraci nakon sumnje ili dijagnoze",
+        text: "Šta kada posumnjate ili dobijete dijagnozu? Kroz razgovor sa stručnim licima, dobićete jasne smernice, informacije i podršku u donošenju narednih koraka.",
+      },
+      {
+        title: "Kako da podržite svoje dete kod kuće",
+        text: "Učimo vas kako da kroz svakodnevne aktivnosti pružite detetu sigurnost, rutinu i podsticaj za razvoj – u skladu sa njegovim individualnim potrebama.",
+      },
+      {
+        title: "Kako da se nosite sa stresom i izazovima roditeljstva",
+        text: "Roditeljima je potrebna snaga da vode svoju decu kroz odrastanje. Radimo na osnaživanju vas kroz razgovor, praktične savete i emocionalnu podršku.",
+      },
+      {
+        title: "Prava deteta i podrška u sistemu obrazovanja",
+        text: "Informišemo vas o pravima vašeg deteta i dostupnim oblicima podrške u obrazovnom sistemu – kako biste znali kome da se obratite i kako da zastupate interese svog deteta.",
+      },
     ],
-    text: "Lice za bezbednost i zdravlje na radu – savetnik/saradnik zastupa poslodavca pred inspekcijskim organima – inspekcija rada",
+    text: "Podrška roditeljima je važan deo našeg rada. Kroz stručno savetovanje pomažemo vam da razumete potrebe svog deteta i da se snađete u izazovima koje roditeljstvo nosi.",
     text2:
-      "Institut LIRA DOO pruža kompletnu podršku poslodavcima u ispunjavanju svih zakonskih obaveza iz oblasti bezbednosti i zdravlja na radu. Naš tim inženjera i savetnika osigurava da vaše poslovanje bude bezbedno, usklađeno sa propisima i efikasno organizovano. U okviru ove oblasti, izrađujemo i sprovodimo sledeće:",
+      "Naša misija je da vas podržimo u svakom koraku roditeljstva, pružajući vam neophodne informacije, alate i emocionalnu podršku. Kroz savetovanje, želimo da vam pomognemo da se snađete u izazovima koji dolaze sa odgajanjem deteta, kako biste stvorili sigurno i podržavajuće okruženje za njegov rast i razvoj. Uvek ste dobrodošli da se obratite našim stručnjacima za pomoć i savete koji su prilagođeni potrebama vašeg deteta.",
   },
   {
     id: 2,
     image: "/ranaprocena.jpg",
     title: "Rana procena i dijagnostika",
     description: [
-      "- Posmatranje deteta u igri i svakodnevnim situacijama",
-      "- Prepoznavanje razvojnih odstupanja i rizika",
-      "- Preporuke za dalje korake i saradnju sa stručnjacima",
+      {
+        title: "Posmatranje deteta u igri i svakodnevnim situacijama",
+        text: "Kroz igru, komunikaciju i svakodnevne aktivnosti, stručni tim beleži važne signale koji ukazuju na tok razvoja deteta. Cilj je da se procena odvija u detetu poznatom i opuštenom okruženju.",
+      },
+      {
+        title: "Prepoznavanje razvojnih odstupanja i rizika",
+        text: "Na osnovu posmatranja i razgovora sa roditeljima, uočavaju se odstupanja od tipičnog razvoja, kao i faktori rizika koji mogu uticati na detetov dalji napredak.",
+      },
+      {
+        title: "Preporuke za dalje korake i saradnju sa stručnjacima",
+        text: "Roditelji dobijaju konkretne preporuke – kako i kada uključiti dodatne stručnjake, koje metode podrške su najprikladnije i kako kreirati stabilno i stimulativno okruženje za dete.",
+      },
     ],
-    text: "Naš tim stručnjaka pruža podršku u identifikaciji obaveza, prikupljanju podataka, izradi dokumentacije i komunikaciji sa nadležnim institucijama. Zaštitimo životnu sredinu zajedno – stručno, odgovorno i savesno.",
+    text: "Rana procena predstavlja prvi i najvažniji korak u razumevanju potreba deteta. Kroz pažljivo posmatranje i stručnu analizu, omogućavamo pravovremenu identifikaciju razvojnih izazova i pružamo smernice za dalje korake.",
     text2:
-      "Institut LIRA DOO pruža stručne usluge u oblasti zaštite životne sredine u skladu sa važećim zakonima i propisima Republike Srbije. Naš cilj je da pomognemo pravnim licima da posluju odgovorno, održivo i u potpunoj zakonskoj usklađenosti. U okviru usluga zaštite životne sredine nudimo:",
+      "Rana procena ne znači dijagnozu - ona je prilika da se detetu pruži pravovremena i adekvatna podrška, što znatno povećava šanse za uspešan razvoj.",
   },
   {
     id: 3,
     image: "/individualniigrupni.jpg",
     title: "Individualni i grupni tretmani",
     description: [
-      "- Razvoj pažnje, govora, motorike, socijalnih veština",
-      "- Integracija primarnih refleksa",
-      "- Brain Gym vežbe i senzorno-motorna stimulacija",
-      "- Priprema za školu / dodatna podrška u učenju",
+      {
+        title: "Razvoj pažnje, govora, motorike, socijalnih veština",
+        text: "Tretmani su usmereni na jačanje pažnje, izražavanja, fine i grube motorike, kao i na razvijanje odnosa sa vršnjacima – sve kroz zabavne i strukturisane zadatke.",
+      },
+      {
+        title: "Integracija primarnih refleksa",
+        text: "Kroz vežbe i pokrete koji podstiču integraciju neuroloških refleksa, pomažemo detetu da lakše savlada prepreke u učenju, ponašanju i svakodnevnom funkcionisanju.",
+      },
+      {
+        title: "Brain Gym vežbe i senzorno-motorna stimulacija",
+        text: "Kombinovanjem fizičkih i mentalnih aktivnosti, podstičemo balans između tela i uma. Vežbe su osmišljene da poboljšaju koordinaciju, fokus, samopouzdanje i emocionalnu stabilnost.",
+      },
+      {
+        title: "Priprema za školu / dodatna podrška u učenju",
+        text: "Radimo sa decom predškolskog uzrasta i školarcima - bilo da je u pitanju priprema za polazak u školu, savladavanje gradiva ili izgradnja zdravih radnih navika bez stresa.",
+      },
     ],
-    text: "Naš stručni tim osigurava da svi dokumenti budu izrađeni pravovremeno, precizno i u skladu sa važećim propisima, uz punu podršku tokom inspekcijskih nadzora. Bezbednost je na prvom mestu – poverite nam svoju zaštitu od požara.",
+    text: "Naš pristup je prilagođen potrebama svakog deteta. Kroz individualni ili grupni rad, razvijamo ključne sposobnosti i podržavamo celokupni razvoj – kroz igru, pokret, komunikaciju i stručno vođene aktivnosti.",
     text2:
-      "Institut LIRA DOO pruža sveobuhvatne usluge iz oblasti zaštite od požara, usklađene sa zakonodavstvom i pravilnicima Republike Srbije. Naš cilj je da poslodavcima omogućimo bezbedno radno okruženje i efikasnu prevenciju rizika od požara. U okviru ove oblasti obavljamo:",
+      "Bez obzira na oblik tretmana, cilj je isti - osnažiti dete da raste, razvija se i koristi svoje potencijale u punoj meri.",
   },
 
   {
@@ -368,25 +401,44 @@ export const pageData: PageData[] = [
     image: "/igraipokret.jpeg",
     title: "Tretmani kroz igru i pokret",
     description: [
-      "- Razvoj kroz muzičke igre, ritam i kretanje",
-      "- Grupne radionice za decu sa sličnim potrebama",
-      "- Jačanje samopouzdanja, saradnje i pozitivne slike o sebi",
+      {
+        title: "Razvoj kroz muzičke igre, ritam i kretanje",
+        text: "Muzičke igre, ritmičke aktivnosti i kretanje podstiču dečiju kreativnost, koordinaciju i emocionalnu izražajnost. Ove aktivnosti pomažu u razvoju motornih veština i sposobnosti za koncentraciju.",
+      },
+      {
+        title: "Grupne radionice za decu sa sličnim potrebama",
+        text: "Kroz grupne aktivnosti, deca se uče socijalizaciji, saradnji i deljenju. Radionice su prilagođene potrebama svakog deteta, a zajednički rad sa vršnjacima omogućava im da se osete podržano i prihvaćeno.",
+      },
+      {
+        title: "Jačanje samopouzdanja, saradnje i pozitivne slike o sebi",
+        text: "Aktivnosti kroz igru i pokret pomažu deci da razviju pozitivnu sliku o sebi, povećavaju svoje samopouzdanje i poboljšaju međuljudske veštine. Kroz kreativne izazove, deca se ohrabruju da budu hrabra, saradnička i kreativna.",
+      },
     ],
-    text: "Planovi se izrađuju u skladu sa vrstom delatnosti klijenta, specifičnostima lokacije i zakonskim zahtevima, a sadrže procenu rizika, plan mera, način evakuacije i koordinaciju sa nadležnim službama. Budite spremni – pravilno planiranje spašava živote i imovinu.",
+    text: "Igra i pokret su osnovni načini na koje deca uče i razvijaju se. Kroz naš pristup koji kombinuje igru, muziku, ritam i fizičku aktivnost, pomažemo deci da se izraze, povežu sa drugima i razvijaju važne socijalne i motorne veštine.",
     text2:
-      "U skladu sa zakonskim obavezama i standardima, Institut LIRA DOO pruža usluge planiranja i organizovanja sistema zaštite i spasavanja u slučaju vanrednih situacija. Pravna lica su u obavezi da preduzmu sve mere za zaštitu života, zdravlja ljudi, imovine i životne sredine u vanrednim okolnostima. Naše usluge obuhvataju:",
+      "Igra i pokret su moćni alati u procesu razvoja. Naš cilj je da kroz ove aktivnosti pomognemo deci da izgrade zdrav temelj za učenje, rast i međuljudske odnose, a sve u bezbednom i podržavajućem okruženju.",
   },
   {
     id: 5,
     image: "/edukacije.jpg",
     title: "Edukacije i radionice za roditelje i stručnjake",
     description: [
-      "- Praktične tehnike za svakodnevni rad sa decom",
-      "- Kako čitati i primeniti IOP (Individualni obrazovni plan)",
-      "- Razumevanje senzorne integracije, ponašanja i emocionalnog razvoja",
+      {
+        title: "Praktične tehnike za svakodnevni rad sa decom",
+        text: "Nudimo konkretne strategije i tehnike koje možete primeniti u svakodnevnom životu, kako biste unapredili razvoj svog deteta. Ove tehnike obuhvataju sve oblasti, od socijalizacije i komunikacije, do motornih veština i emocionalnog razvoja.",
+      },
+      {
+        title: "Kako čitati i primeniti IOP (Individualni obrazovni plan)",
+        text: "Pomažemo roditeljima i stručnjacima da bolje razumeju IOP i kako da ga primene u praksi. IOP je ključni alat za pružanje personalizovane podrške deci, a kroz našu edukaciju ćete naučiti kako da se efikasno rukovodite ovim planom i postignete najbolje rezultate za vaše dete.",
+      },
+      {
+        title:
+          "Razumevanje senzorne integracije, ponašanja i emocionalnog razvoja",
+        text: "Edukacija se fokusira i na razumevanje senzorne integracije, koja je ključna za pravilno funkcionisanje deteta. Takođe, pomažemo u razumevanju ponašanja i emocionalnog razvoja, kako bi roditelji i stručnjaci znali kako da prepoznaju i odgovore na specifične potrebe svakog deteta.",
+      },
     ],
-    text: "Naš tim obezbeđuje usklađenost sa važećim zakonodavstvom, zaštitu interesa poslodavca i jasnoću u komunikaciji sa zaposlenima. Uredna dokumentacija – temelj svakog uspešnog kolektiva.",
+    text: "Kroz naše edukacije i radionice, pružamo roditeljima i stručnjacima neophodne alate i znanja za efikasnu podršku deci. Naši programi su usmereni na praktične tehnike i savete koji mogu pomoći u svakodnevnom radu sa decom, kao i bolje razumevanje njihovih potreba.",
     text2:
-      "Institut LIRA DOO nudi podršku u pripremi kompletne dokumentacije iz oblasti radnih odnosa, u skladu sa Zakonom o radu i drugim relevantnim propisima. Kvalitetna i pravovremena dokumentacija ključna je za zakonito poslovanje i stabilne odnose sa zaposlenima. Usluge obuhvataju:",
+      "Naša edukacija je osmišljena da pomogne roditeljima i stručnjacima da steknu dublje razumevanje razvoja dece i efikasnije odgovore na njihove potrebe. Kroz ove radionice, stvaramo prostor za deljenje iskustava i implementaciju najboljih praksi u svakodnevnom radu sa decom.",
   },
 ];

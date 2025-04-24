@@ -24,14 +24,14 @@ const Hero = () => {
         <h2 className="text-muted font-medium">
           centar u službi roditelja, dece i porodice
         </h2>
-        <div className="flex flex-col gap-4 md:flex-row">
-          <Link href="/proizvodi">
+        <div className="flex flex-col gap-4 md:flex-row text-center">
+          <Link href="/#usluge">
             <motion.button
               whileHover={{ translateY: "-5px" }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 bg-primary text-muted px-4 py-2 md:px-8 md:py-3 rounded-lg font-medium"
             >
-              Istražite naše proizvode
+              Istražite naše usluge
               <ArrowRightIcon className="w-[18px]" />
             </motion.button>
           </Link>

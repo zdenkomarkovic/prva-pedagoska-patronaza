@@ -5,7 +5,7 @@ import { PhoneIcon } from "lucide-react";
 
 const PozoviteNasOdmah = () => {
   return (
-    <div className="bg-primary mt-10 md:mt-20 py-10 md:py-20">
+    <div className="bg-primary  py-10 md:py-20">
       <div className="container px-2 md:px-4 mx-auto font-bold flex flex-col md:flex-row items-center gap-10 md:gap-20">
         <div>
           <h2 className=" text-muted">
