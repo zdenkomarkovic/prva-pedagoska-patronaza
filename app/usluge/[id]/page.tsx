@@ -1,7 +1,7 @@
 "use client";
-import Cards1 from "@/components/Cards1";
+
 import Prednosti from "@/components/Prednosti";
-import { cards1Data, pageData } from "@/constants/index";
+import { pageData } from "@/constants/index";
 import Image from "@/node_modules/next/image";
 import { useParams, notFound } from "@/node_modules/next/navigation";
 import React from "react";
