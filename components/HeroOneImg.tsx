@@ -40,7 +40,7 @@ const Hero = () => {
               <motion.button
                 whileHover={{ translateY: "-5px" }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-transparent flex gap-3 text-white font-bold border-white border-[2px] rounded-lg px-4 md:px-8 md:py-3 py-2"
+                className="bg-transparent flex gap-3 text-primary font-bold border-primary border-[2px] rounded-lg px-4 md:px-8 md:py-3 py-2"
               >
                 <PhoneIcon />
                 POZOVITE ODMAH
