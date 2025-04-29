@@ -323,7 +323,7 @@ export interface PageData {
 export const pageData: PageData[] = [
   {
     id: 1,
-    image: "/savetovanje.jpg",
+    image: "/savetovanje1.jpg",
     title: "Savetovanje za roditelje",
     description: [
       {
@@ -349,7 +349,7 @@ export const pageData: PageData[] = [
   },
   {
     id: 2,
-    image: "/ranaprocena.jpg",
+    image: "/ranaprocena2.jpg",
     title: "Rana procena i dijagnostika",
     description: [
       {
@@ -371,7 +371,7 @@ export const pageData: PageData[] = [
   },
   {
     id: 3,
-    image: "/individualniigrupni.jpg",
+    image: "/individualniigrupni1.jpg",
     title: "Individualni i grupni tretmani",
     description: [
       {
@@ -420,7 +420,7 @@ export const pageData: PageData[] = [
   },
   {
     id: 5,
-    image: "/edukacije.jpg",
+    image: "/edukacije1.jpg",
     title: "Edukacije i radionice za roditelje i stručnjake",
     description: [
       {

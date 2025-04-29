@@ -71,7 +71,7 @@ const About2 = () => {
             className="rounded-lg overflow-hidden  md:w-1/3"
           >
             <Image
-              src={"/hero.jpg"}
+              src={"/heroo1.jpg"}
               width={500}
               height={500}
               alt="pedagog"

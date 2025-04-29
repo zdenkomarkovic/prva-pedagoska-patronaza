@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "../public/manikam.png";
+import Logo from "../public/v.png";
 import Link from "next/link";
 import { ChevronDownIcon, MenuIcon, PhoneIcon } from "lucide-react";
 
@@ -156,14 +156,14 @@ export default function Header() {
           : "bg-transparent"
       }  fixed top-0 left-0 right-0 z-[50] transition-colors`}
     >
-      <nav className="flex items-center justify-between px-8 py-4 max-w-[80rem] w-full text-primary font-bold">
+      <nav className="flex items-center justify-between px-8 py-3 max-w-[80rem] w-full text-primary font-bold">
         <Link href="/" className="">
           <Image
             src={Logo}
             alt="dm rustic 24"
-            width={50}
+            width={150}
             height={50}
-            className="rounded-full"
+            className="w-[100px] md:w-[150px] "
           />
         </Link>
         <DesktopNav />

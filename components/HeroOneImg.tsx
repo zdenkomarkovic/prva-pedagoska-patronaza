@@ -1,6 +1,6 @@
 "use client";
 
-import Hero3 from "../public/hero1.jpeg";
+import Hero3 from "../public/heroo3.jpg";
 import Image from "next/image";
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className=" h-[100dvh]">
       <div className="relative flex h-[77dvh]">
-        <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-[1]" />
+        {/* <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-[1]" /> */}
         <Image
           src={Hero3}
           alt="pedagog"
