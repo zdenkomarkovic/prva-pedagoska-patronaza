@@ -8,8 +8,8 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className=" h-[100dvh]">
-      <div className="relative flex h-[77dvh]">
+    <div className="">
+      <div className="relative flex h-[100dvh]">
         {/* <div className="absolute top-0 left-0 w-full h-full bg-white/20 z-[1]" /> */}
         <Image
           src={Hero3}
@@ -48,12 +48,6 @@ const Hero = () => {
             </a>
           </div> */}
         </div>
-      </div>
-      <div className="h-[23dvh] flex items-center">
-        <h2 className="container px-2 md:px-4 mx-auto">
-          Prva pedagoška patronaža je centar koji je u službi roditelja, dece i
-          porodice i jedina je i prva kod nas i u regionu ovog tipa.
-        </h2>
       </div>
     </div>
   );
