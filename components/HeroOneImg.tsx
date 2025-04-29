@@ -2,9 +2,9 @@
 
 import Hero3 from "../public/heroo3.jpg";
 import Image from "next/image";
-import { ArrowRightIcon, PhoneIcon } from "lucide-react";
-import Link from "next/link";
-import { motion } from "framer-motion";
+// import { ArrowRightIcon, PhoneIcon } from "lucide-react";
+// import Link from "next/link";
+// import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
