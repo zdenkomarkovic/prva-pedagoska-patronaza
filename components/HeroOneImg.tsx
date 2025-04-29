@@ -25,7 +25,7 @@ const Hero = () => {
           <h2 className="text-white font-medium">
             centar u službi roditelja, dece i porodice
           </h2>
-          <div className="flex flex-col gap-4 md:flex-row text-center items-center">
+          {/* <div className="flex flex-col gap-4 md:flex-row text-center items-center">
             <Link href="/#usluge">
               <motion.button
                 whileHover={{ translateY: "-5px" }}
@@ -46,7 +46,7 @@ const Hero = () => {
                 POZOVITE ODMAH
               </motion.button>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="h-[23dvh] flex items-center">
