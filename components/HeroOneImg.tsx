@@ -2,7 +2,7 @@
 
 import Hero3 from "../public/heroo3.jpg";
 import Image from "next/image";
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon, PhoneIcon } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -22,10 +22,10 @@ const Hero = () => {
           <h1 className="text-primary text-3xl md:text-7xl text-center font-bold px-4">
             Prva pedagoška patronaža
           </h1>
-          <h2 className="text-muted font-medium">
+          <h2 className="text-white font-medium">
             centar u službi roditelja, dece i porodice
           </h2>
-          <div className="flex flex-col gap-4 md:flex-row text-center">
+          <div className="flex flex-col gap-4 md:flex-row text-center items-center">
             <Link href="/#usluge">
               <motion.button
                 whileHover={{ translateY: "-5px" }}
@@ -40,8 +40,9 @@ const Hero = () => {
               <motion.button
                 whileHover={{ translateY: "-5px" }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-transparent text-muted border-muted border-[1px] rounded-lg px-4 md:px-8 md:py-3 py-2 font-medium"
+                className="bg-transparent flex gap-3 text-white font-bold border-white border-[2px] rounded-lg px-4 md:px-8 md:py-3 py-2"
               >
+                <PhoneIcon />
                 Pozovite odmah
               </motion.button>
             </a>
