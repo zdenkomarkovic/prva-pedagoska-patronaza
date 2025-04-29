@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className=" h-[100dvh]">
       <div className="relative flex h-[77dvh]">
-        {/* <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-[1]" /> */}
+        <div className="absolute top-0 left-0 w-full h-full bg-white/40 z-[1]" />
         <Image
           src={Hero3}
           alt="pedagog"
@@ -40,7 +40,7 @@ const Hero = () => {
               <motion.button
                 whileHover={{ translateY: "-5px" }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-transparent flex gap-3 text-white font-bold border-white border-[2px] rounded-lg px-4 md:px-8 md:py-3 py-2"
+                className="bg-transparent flex gap-3 text-primary font-bold border-primary border-[2px] rounded-lg px-4 md:px-8 md:py-3 py-2"
               >
                 <PhoneIcon />
                 POZOVITE ODMAH
