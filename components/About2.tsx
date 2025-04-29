@@ -93,7 +93,7 @@ const About2 = () => {
           Naša filozofija:{" "}
           <span className="font-bold text-primary">
             {" "}
-            Ljubav, razumevanje i stručnost u svakom koraku
+            Ljubav, stručnost i zajedništvo uvek daju rezultate
           </span>
           .
         </p>{" "}
