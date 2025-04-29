@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className=" h-[100dvh]">
       <div className="relative flex h-[77dvh]">
-        <div className="absolute top-0 left-0 w-full h-full bg-white/20 z-[1]" />
+        {/* <div className="absolute top-0 left-0 w-full h-full bg-white/20 z-[1]" /> */}
         <Image
           src={Hero3}
           alt="pedagog"
