@@ -100,7 +100,7 @@ const About2 = () => {
         <p className=" first-letter:pl-6 font-bold text-center">
           Svako dete je jedinstveno, i svako dete zaslužuje šansu.
         </p>
-        <h3 className=" first-letter:pl-6 font-bold text-primary">
+        <h3 className=" first-letter:pl-6 font-bold text-secondary-foreground">
           Skrećemo pažnju da mesto obavljanja delatnosti i pružanja usluga
           prilagođavamo želji korisnika.{" "}
         </h3>
@@ -112,17 +112,17 @@ const About2 = () => {
             alt="pedagog"
             className="w-[170px] md:w-[300px]"
           />
-          <div className="flex flex-col gap-3 text-center  text-primary">
-            <div className="mx-auto border bg-white border-primary shadow-lg py-5 px-5 md:px-20 w-full rounded-lg">
-              <p>Program i edukacija u samom centru</p>
-            </div>
-            <div className="mx-auto border bg-white border-primary shadow-lg p-5 w-full rounded-lg">
-              {" "}
-              <p>Onlajn program i edukacija</p>
-            </div>
-            <div className="mx-auto border bg-white border-primary shadow-lg p-5 w-full rounded-lg">
+          <div className="flex flex-col gap-3 text-center  text-secondary-foreground">
+            <div className="mx-auto border bg-white border-secondary-foreground shadow-lg p-5 w-full rounded-lg">
               {" "}
               <p>Dolazak naših stručnjaka na adresu</p>
+            </div>
+            <div className="mx-auto border bg-white border-secondary-foreground shadow-lg py-5 px-5 md:px-20 w-full rounded-lg">
+              <p>Program i edukacija u samom centru</p>
+            </div>
+            <div className="mx-auto border bg-white border-secondary-foreground shadow-lg p-5 w-full rounded-lg">
+              {" "}
+              <p>Onlajn program i edukacija</p>
             </div>
           </div>
         </div>
