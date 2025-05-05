@@ -17,9 +17,9 @@ const About2 = () => {
             Prvi centar ovog tipa kod nas i u regionu.
           </p>
         </div>
-        <p className=" first-letter:pl-6">
+        <p className=" first-letter:pl-6 font-bold">
           Naše polje delovanja je -{" "}
-          <span className="font-bold text-primary">
+          <span className="font-bold text-primary text-xl md:text-2xl">
             {" "}
             Preventivna pedagogija i preventiva pre korektive.
           </span>
@@ -49,8 +49,8 @@ const About2 = () => {
           sa ciljem da olakša roditeljima i deci školske obaveze na kućnoj
           adresi:
         </p>
-        <div className="flex flex-col gap-5 md:flex-row items-center justify-around border border-primary bg-white p-4 md:p-10 rounded-lg">
-          <ul className="text-primary">
+        <div className="flex flex-col gap-5 md:flex-row items-center justify-around border border-secondary bg-white p-4 md:p-10 rounded-lg">
+          <ul className="text-secondary">
             <li className=" first-letter:pl-6">
               - Kašnjenje u razvoju govora i jezika
             </li>
