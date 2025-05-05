@@ -19,10 +19,10 @@ const Hero = () => {
         />
 
         <div className="relative container px-2 md:px-4 mx-auto  flex flex-col gap-6 items-center pt-20 md:pt-10 justify-center z-[1] ">
-          <h1 className="text-primary text-3xl md:text-7xl text-center font-bold px-4">
+          <h1 className="text-primary text-3xl md:text-7xl text-center font-bold px-4 uppercase">
             Prva pedagoška patronaža
           </h1>
-          <h2 className="text-white font-medium">
+          <h2 className="text-white font-bold">
             centar u službi roditelja, dece i porodice
           </h2>
           {/* <div className="flex flex-col gap-4 md:flex-row text-center items-center">
