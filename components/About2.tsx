@@ -52,25 +52,31 @@ const About2 = () => {
         <div className="flex flex-col gap-5 md:flex-row items-center justify-around border border-secondary bg-white p-4 md:p-10 rounded-lg">
           <ul className="text-secondary">
             <li className=" first-letter:pl-6">
-              - Kašnjenje u razvoju govora i jezika
+              - rad sa decom sa razvojnim, intelektualnim smetnjama i problemima
+              u učenju
             </li>
             <li className=" first-letter:pl-6">
-              - Kašnjenje u razvoju motorike (krupne i fine)
-            </li>
-            <li className=" first-letter:pl-6">
-              {" "}
-              - Poteškoće u ponašanju i pažnji
-            </li>
-            <li className=" first-letter:pl-6">
-              {" "}
-              - Autizam, ADHD, dispraksija
-            </li>
-            <li className=" first-letter:pl-6">
-              - Emocionalna nestabilnost, nesigurnost, socijalna povučenost
+              - prevazilaženje prepreka u obavljanju svkodnevnih zadataka usled
+              poremećaja pažnje, regulacije afekata, nepoželjnih oblika
+              ponašanja
             </li>
             <li className=" first-letter:pl-6">
               {" "}
-              - Priprema za školu / adaptacija na školu
+              - izgradnja socio-emocionalnih veština
+            </li>
+            <li className=" first-letter:pl-6">
+              {" "}
+              - podrška porodicama i njihovoj deci sa PSA, ADHD, intelektualnim
+              smetnjama
+            </li>
+            <li className=" first-letter:pl-6">
+              - kontinuirana pomoć učenicima u redovnom predškolskom i školskom
+              obrazovanju
+            </li>
+            <li className=" first-letter:pl-6">
+              {" "}
+              - rad sa porodicama (radionice, tribine, savetovanje i pružanje
+              važnih informacija u vezi inkluzije u vrtićima i školama )
             </li>
           </ul>
           <motion.div
@@ -97,7 +103,7 @@ const About2 = () => {
           </span>
           .
         </p>{" "}
-        <p className=" first-letter:pl-6 font-bold text-center">
+        <p className=" first-letter:pl-6 font-bold text-center text-primary">
           Svako dete je jedinstveno, i svako dete zaslužuje šansu.
         </p>
         <h3 className=" first-letter:pl-6 font-bold text-secondary-foreground">
